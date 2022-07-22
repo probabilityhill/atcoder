@@ -17,6 +17,6 @@ dp[0] = 0
 dp[1] = abs(H_LIST[1] - H_LIST[0])
 
 for i in range(2, N):
-  dp[i] = min(dp[i-2] + abs(H_LIST[i]-H_LIST[i-2]), dp[i-1] + abs(H_LIST[i]-H_LIST[i-1]))
+  dp[i] = min(dp[i-2] + abs(H_LIST[i] - H_LIST[i-2]), dp[i-1] + abs(H_LIST[i] - H_LIST[i-1]))
 
-print(dp[N - 1])
+print(dp[N-1])
