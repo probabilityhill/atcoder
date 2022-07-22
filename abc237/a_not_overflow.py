@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/abc237/tasks/abc237_a
+
 import sys
 
 N = int(sys.stdin.readline())
