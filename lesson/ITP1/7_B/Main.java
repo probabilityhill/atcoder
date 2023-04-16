@@ -1,4 +1,4 @@
-// 00.07 s / 42004 KB / 685 B
+// 00.06 s / 42356 KB / 650 B
 
 import java.util.*;
 
@@ -12,9 +12,8 @@ public class Main {
             int count = 0;
             for(int i = 1; i <= N; i++) {
                 for(int j = i + 1; j <= N; j++) {
-                    for(int k = j + 1; k <= N; k++) {
-                        if(i + j + k == X) count++;
-                    }
+                    int k = X - i - j;
+                    if(k >= j + 1 && k <= N) count++;
                 }
             }
             System.out.println(count);
